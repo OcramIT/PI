@@ -104,7 +104,7 @@ public class FirstPersonController : MonoBehaviour
     #endregion
 
     #region Crouch
-
+    private Transform[] children = null;
     public bool enableCrouch = true;
     public bool holdToCrouch = true;
     public KeyCode crouchKey = KeyCode.LeftControl;
@@ -151,7 +151,13 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        if(lockCursor)
+        children = new Transform[transform.childCount];
+        int i = 0;
+        foreach (Transform T in transform)
+            children[i++] = T;
+
+
+        if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -481,8 +487,13 @@ public class FirstPersonController : MonoBehaviour
         // Brings walkSpeed back up to original speed
         if(isCrouched)
         {
+            transform.DetachChildren();
+
             transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
             walkSpeed /= speedReduction;
+
+            foreach (Transform T in children)              // Re-Attach
+                T.parent = transform;
 
             isCrouched = false;
         }
@@ -490,8 +501,13 @@ public class FirstPersonController : MonoBehaviour
         // Reduces walkSpeed
         else
         {
+            transform.DetachChildren();
+
             transform.localScale = new Vector3(originalScale.x, crouchHeight, originalScale.z);
             walkSpeed *= speedReduction;
+
+            foreach (Transform T in children)              // Re-Attach
+                T.parent = transform;
 
             isCrouched = true;
         }
