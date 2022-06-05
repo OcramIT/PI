@@ -81,6 +81,12 @@ public class Reach : MonoBehaviour
             if (keyRef.id == "key2") hasKey2 = true;
             Destroy(keyRef.gameObject);
         }
+
+        if (hit.transform.CompareTag("LamparinaPickup"))
+        {
+            var pickupLamparinaRef = hit.transform.GetComponent<LamparinaPickup>();
+            if (pickupLamparinaRef) pickupLamparinaRef.Pickup();
+        }
     }
 
 
@@ -115,7 +121,7 @@ public class Reach : MonoBehaviour
                     mOpenDoor.SetActive(false);
                 }
             }
-            else if (hit.transform.CompareTag("Key"))
+            else if ((hit.transform.CompareTag("Key"))||(hit.transform.CompareTag("LamparinaPickup")))
             {
                 mPickup.SetActive(true);
             }

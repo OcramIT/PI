@@ -120,7 +120,7 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   - tooltip: 
-    expanded: 1
+    expanded: 0
     settings: []
     intSettings: 
     type: 5
@@ -162,9 +162,35 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   _sceneHistory:
+  - name: Example8_CameraInput
+    path: Assets/SWS/Examples/Example8_CameraInput.unity
+  - name: Example10_WaypointRotation
+    path: Assets/SWS/Examples/Example10_WaypointRotation.unity
+  - name: Example4_Advanced
+    path: Assets/SWS/Examples/Example4_Advanced.unity
+  - name: Example3_Navmesh
+    path: Assets/SWS/Examples/Example3_Navmesh.unity
+  - name: Example7_Runtime
+    path: Assets/SWS/Examples/Example7_Runtime.unity
+  - name: View States
+    path: Assets/Plugins/Infinity Code/Ultimate Editor Enhancer/Examples/View States.unity
+  - name: Decals Demo
+    path: Assets/GVX URP Decal/Decals Demo.unity
+  - name: Example2_Bezier
+    path: Assets/SWS/Examples/Example2_Bezier.unity
   - name: florest
     path: Assets/Scenes/florest.unity
-  - name: Hospital
-    path: Assets/Scenes/Hospital.unity
+  - name: Example5_Events
+    path: Assets/SWS/Examples/Example5_Events.unity
   - name: TestLevel
     path: Assets/Scenes/TestLevel.unity
+  - name: Example1_Splines
+    path: Assets/SWS/Examples/Example1_Splines.unity
+  - name: Example9_RapidInput
+    path: Assets/SWS/Examples/Example9_RapidInput.unity
+  - name: Example6_PathInput
+    path: Assets/SWS/Examples/Example6_PathInput.unity
+  - name: New Scene
+    path: Assets/Scenes/New Scene.unity
+  - name: Hospital
+    path: Assets/Scenes/Hospital.unity

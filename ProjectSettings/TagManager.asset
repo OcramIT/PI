@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - Key
+  - LamparinaPickup
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - Lamparina
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Player
   - 
   - 
   - 

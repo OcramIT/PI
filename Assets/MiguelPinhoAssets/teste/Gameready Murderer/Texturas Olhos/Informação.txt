@@ -1,0 +1,2 @@
+As irises são dois objetos separados, teve que ser para poder fazer olhos de cores diferentes
+no entanto podes usar os ficheiros do tipo "Sclera2" para os dois porque é a parte branca dos olhos.

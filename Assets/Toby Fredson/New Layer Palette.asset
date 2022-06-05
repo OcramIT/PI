@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c509dbaa7b6f416409e3195321a2187e, type: 3}
+  m_Name: New Layer Palette
+  m_EditorClassIdentifier: 
+  PaletteLayers:
+  - {fileID: 8574412962073106934, guid: dee149ea5dca5de4fad6384c8e47d4f9, type: 2}
+  - {fileID: 8574412962073106934, guid: 401fe615c10b10845af6b1fb9a4154a3, type: 2}
+  - {fileID: 8574412962073106934, guid: fa3c3a98a8ccca9498412c55f19efb83, type: 2}
+  - {fileID: 8574412962073106934, guid: 8a9ff7cad28180640b38f32cf43b242d, type: 2}
+  - {fileID: 8574412962073106934, guid: 37e9c4eee3109724381cc2833f7766fe, type: 2}
+  - {fileID: 8574412962073106934, guid: 8834fb916d1dcc447a83f4e120ad455c, type: 2}
+  - {fileID: 8574412962073106934, guid: a75a5bea86761d74ca87f37dd66645a6, type: 2}
+  - {fileID: 8574412962073106934, guid: c59c1efea6f63b04a9cb20ea9dec9226, type: 2}
+  - {fileID: 8574412962073106934, guid: 28675fa7f9fb07d4daf1fb076a73ff88, type: 2}
+  - {fileID: 8574412962073106934, guid: 9536faebab9ef5d42ad3c1c9523ba842, type: 2}
+  - {fileID: 8574412962073106934, guid: e94319c7539a18444ac11877e581ae16, type: 2}
+  - {fileID: 8574412962073106934, guid: 3781ccf5a5a522f43bd637d8906362e9, type: 2}
+  - {fileID: 8574412962073106934, guid: d9cd5ec13762cc74d821d5137fe29dd1, type: 2}
+  - {fileID: 8574412962073106934, guid: a7afac6750050db488bc1211fb920b3e, type: 2}
+  - {fileID: 8574412962073106934, guid: 870ff25263a908b4f97192e13875bc5b, type: 2}
+  - {fileID: 8574412962073106934, guid: 1d1d28e72a5366147b01514da953297c, type: 2}
+  - {fileID: 8574412962073106934, guid: 0fc88ee3e09d8ab479df054c437544de, type: 2}
