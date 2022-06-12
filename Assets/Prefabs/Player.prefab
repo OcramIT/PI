@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1375690625024459658}
   - component: {fileID: 1375690625024459656}
   - component: {fileID: 1375690625024459657}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1375690625253649854}
   - component: {fileID: 3383311792980501191}
   - component: {fileID: 3383311792980501188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ MonoBehaviour:
   unlimitedSprint: 0
   sprintKey: 304
   sprintSpeed: 5
-  sprintDuration: 11.1
+  sprintDuration: 20
   sprintCooldown: 0.5
   sprintFOV: 50
   sprintFOVStepTime: 10
@@ -295,7 +295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1375690625413845793}
   - component: {fileID: 1375690625413845792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SprintBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 1375690625466294647}
   - component: {fileID: 1375690625466294645}
   - component: {fileID: 1375690625466294646}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1375690625820619170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 1375690625844357029}
   - component: {fileID: 1375690625844357035}
   - component: {fileID: 1375690625844357028}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CrosshairAndStamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,8 +494,8 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 1375690626009728800}
-  m_PlaneDistance: 100
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 0.011
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 1375690625964866339}
   - component: {fileID: 1375690625964866337}
   - component: {fileID: 1375690625964866338}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StaminaBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 1375690626009728800}
   - component: {fileID: 1375690626009728801}
   - component: {fileID: 3383311791798997231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -731,10 +731,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1375690626009728807}
     m_Modifications:
+    - target: {fileID: 1647547147, guid: 735f1ecb132c0ed4eb8598c0f9b97876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035012965121175681, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035012965121175682, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035012965121175683, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
+        type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035012965121175683, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
+        type: 3}
+      propertyPath: m_Range
+      value: 4.123829
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035012965121175683, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
+        type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 38.12587
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035012965121175686, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8361793752476881769, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
         type: 3}
       propertyPath: m_Name
       value: Prf_LamparinaV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361793752476881769, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8361793752476881769, guid: 735f1ecb132c0ed4eb8598c0f9b97876,
         type: 3}

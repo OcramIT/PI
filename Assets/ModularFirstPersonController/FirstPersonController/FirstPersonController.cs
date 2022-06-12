@@ -373,12 +373,14 @@ public class FirstPersonController : MonoBehaviour
     void FixedUpdate()
     {
         #region Movement
+       
 
         if (playerCanMove)
         {
+            
             // Calculate how fast we should be moving
             Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-
+            
             // Checks if player is walking and isGrounded
             // Will allow head bob
             if (targetVelocity.x != 0 || targetVelocity.z != 0 && isGrounded)

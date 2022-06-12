@@ -84,7 +84,7 @@ public class Reach : MonoBehaviour
 
         if (hit.transform.CompareTag("LamparinaPickup"))
         {
-            var pickupLamparinaRef = hit.transform.GetComponent<LamparinaPickup>();
+            var pickupLamparinaRef = hit.transform.GetComponent<PickupObject>();
             if (pickupLamparinaRef) pickupLamparinaRef.Pickup();
         }
     }

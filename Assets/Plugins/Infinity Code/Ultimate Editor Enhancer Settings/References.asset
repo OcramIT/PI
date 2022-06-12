@@ -162,6 +162,18 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   _sceneHistory:
+  - name: florest
+    path: Assets/Scenes/florest.unity
+  - name: Narrativa
+    path: Assets/Scenes/Narrativa.unity
+  - name: MainMenu
+    path: Assets/MenusChallenges/MainMenu.unity
+  - name: 268eadca0432412ab8edd248b22b6ee6
+    path: Assets/268eadca0432412ab8edd248b22b6ee6.unity
+  - name: TestLevel
+    path: Assets/Scenes/TestLevel.unity
+  - name: Menu
+    path: Assets/Scenes/Menu.unity
   - name: Example8_CameraInput
     path: Assets/SWS/Examples/Example8_CameraInput.unity
   - name: Example10_WaypointRotation
@@ -178,12 +190,8 @@ MonoBehaviour:
     path: Assets/GVX URP Decal/Decals Demo.unity
   - name: Example2_Bezier
     path: Assets/SWS/Examples/Example2_Bezier.unity
-  - name: florest
-    path: Assets/Scenes/florest.unity
   - name: Example5_Events
     path: Assets/SWS/Examples/Example5_Events.unity
-  - name: TestLevel
-    path: Assets/Scenes/TestLevel.unity
   - name: Example1_Splines
     path: Assets/SWS/Examples/Example1_Splines.unity
   - name: Example9_RapidInput
@@ -192,5 +200,3 @@ MonoBehaviour:
     path: Assets/SWS/Examples/Example6_PathInput.unity
   - name: New Scene
     path: Assets/Scenes/New Scene.unity
-  - name: Hospital
-    path: Assets/Scenes/Hospital.unity
