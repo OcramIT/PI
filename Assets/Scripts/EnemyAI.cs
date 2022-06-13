@@ -43,7 +43,7 @@ public class EnemyAI : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         if (!playerInSightRange && !playerInAttackRange && shouldMove) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (playerInSightRange && !playerInAttackRange && shouldMove) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
 
@@ -53,8 +53,10 @@ public class EnemyAI : MonoBehaviour
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
+        {
+            animatorRef.SetBool("IsMoving", true);
             agent.SetDestination(walkPoint);
-        
+        }
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
@@ -87,6 +89,7 @@ public class EnemyAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+        if (!shouldMove) return;
         animatorRef.SetBool("IsMoving", true);
         agent.SetDestination(player.position);
     }
@@ -105,17 +108,21 @@ public class EnemyAI : MonoBehaviour
         {
             animatorRef.SetBool("IsMoving", false);
             ///Attack code here
-            animatorRef.SetTrigger("Attack");
+            //animatorRef.SetTrigger("Attack");
+            animatorRef.Play("standHit");
             Debug.Log("Ataque");
-            
+
+            player.GetComponent<PlayerHealth>().TakeDamage(10);
             ///End of attack code
 
             alreadyAttacked = true;
+            Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
     private void ResetAttack()
     {
         alreadyAttacked = false;
+        StartCoroutine(aguardarMovimento());
     }
 
     public void TakeDamage(int damage)
@@ -141,7 +148,7 @@ public class EnemyAI : MonoBehaviour
     {
         shouldMove = false;
         agent.isStopped=true;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(0.7f);
         shouldMove = true;
         agent.isStopped = false;
 
