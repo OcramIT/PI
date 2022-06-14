@@ -7,6 +7,7 @@ TagManager:
   - Door
   - Key
   - LamparinaPickup
+  - Note
   layers:
   - Default
   - TransparentFX
