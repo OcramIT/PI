@@ -16,6 +16,11 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
+    //Para saltar muro
+    public bool shouldJump=true;
+    //
+
+
     private Rigidbody rb;
 
     #region Camera Movement Variables

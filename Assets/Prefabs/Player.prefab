@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shouldJump: 1
   playerCamera: {fileID: 1375690626009728800}
   fov: 50
   invertCamera: 0

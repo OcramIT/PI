@@ -162,16 +162,20 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   _sceneHistory:
+  - name: AssetsParaSeManterem
+    path: Assets/Scenes/AssetsParaSeManterem.unity
+  - name: HospitalInterior
+    path: Assets/Scenes/HospitalInterior.unity
   - name: florest
     path: Assets/Scenes/florest.unity
+  - name: TestLevel
+    path: Assets/Scenes/TestLevel.unity
   - name: Narrativa
     path: Assets/Scenes/Narrativa.unity
   - name: MainMenu
     path: Assets/MenusChallenges/MainMenu.unity
   - name: 268eadca0432412ab8edd248b22b6ee6
     path: Assets/268eadca0432412ab8edd248b22b6ee6.unity
-  - name: TestLevel
-    path: Assets/Scenes/TestLevel.unity
   - name: Menu
     path: Assets/Scenes/Menu.unity
   - name: Example8_CameraInput
@@ -196,7 +200,3 @@ MonoBehaviour:
     path: Assets/SWS/Examples/Example1_Splines.unity
   - name: Example9_RapidInput
     path: Assets/SWS/Examples/Example9_RapidInput.unity
-  - name: Example6_PathInput
-    path: Assets/SWS/Examples/Example6_PathInput.unity
-  - name: New Scene
-    path: Assets/Scenes/New Scene.unity
