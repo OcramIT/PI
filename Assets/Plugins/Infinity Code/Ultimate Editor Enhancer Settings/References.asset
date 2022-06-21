@@ -162,14 +162,16 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   _sceneHistory:
+  - name: CutScene
+    path: Assets/Scenes/CutScene.unity
   - name: AssetsParaSeManterem
     path: Assets/Scenes/AssetsParaSeManterem.unity
-  - name: HospitalInterior
-    path: Assets/Scenes/HospitalInterior.unity
   - name: florest
     path: Assets/Scenes/florest.unity
   - name: TestLevel
     path: Assets/Scenes/TestLevel.unity
+  - name: HospitalInterior
+    path: Assets/Scenes/HospitalInterior.unity
   - name: Narrativa
     path: Assets/Scenes/Narrativa.unity
   - name: MainMenu
@@ -198,5 +200,3 @@ MonoBehaviour:
     path: Assets/SWS/Examples/Example5_Events.unity
   - name: Example1_Splines
     path: Assets/SWS/Examples/Example1_Splines.unity
-  - name: Example9_RapidInput
-    path: Assets/SWS/Examples/Example9_RapidInput.unity
