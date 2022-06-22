@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/CutScene.unity
-    guid: 248209ffe77466849802c809cfcfb8b3
   - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: a009482e5adee6f46a28551f02df008b
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 248209ffe77466849802c809cfcfb8b3
   - enabled: 0
     path: Assets/Scenes/AssetsParaSeManterem.unity
     guid: 99c2eba4691e66e4aaa7893b62e37a1e
