@@ -8,6 +8,7 @@ TagManager:
   - Key
   - LamparinaPickup
   - Note
+  - BoltCutter
   layers:
   - Default
   - TransparentFX
