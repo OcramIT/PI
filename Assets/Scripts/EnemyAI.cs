@@ -14,6 +14,11 @@ public class EnemyAI : MonoBehaviour
 
     Animator animatorRef;
 
+    [SerializeField] AudioClip[] AttakingPlayerSounds;
+    [SerializeField] AudioClip[] SpottingPlayerSounds;
+    [SerializeField] AudioClip[] LookingForPlayerSounds;
+    [SerializeField] AudioSource AudSource;
+
     //Patroling
     [SerializeField] Vector3 walkPoint;
     bool walkPointSet;
@@ -29,11 +34,20 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float sightRange, attackRange;
     [SerializeField] bool playerInSightRange, playerInAttackRange;
 
+
+
     private void Awake()
     {
 
         agent = GetComponent<NavMeshAgent>();
         animatorRef = GetComponent<Animator>();
+        AudSource = GetComponent<AudioSource>();
+
+    }
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Update()
@@ -49,6 +63,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Patroling()
     {
+        StartCoroutine(WaitToPlayLookingSound());
         if (!shouldMove) return;
         if (!walkPointSet) SearchWalkPoint();
 
@@ -89,6 +104,7 @@ public class EnemyAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+        StartCoroutine(WaitToPlaySpottingSound());
         if (!shouldMove) return;
         animatorRef.SetBool("IsMoving", true);
         agent.SetDestination(player.position);
@@ -96,6 +112,7 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackPlayer()
     {
+        StartCoroutine(WaitToPlayAttackSound());
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
@@ -153,5 +170,24 @@ public class EnemyAI : MonoBehaviour
         agent.isStopped = false;
 
     }
-    
+
+    IEnumerator WaitToPlayAttackSound()
+    {
+        yield return new WaitForSeconds(3f);
+        AudSource.clip = AttakingPlayerSounds[Random.Range(0, AttakingPlayerSounds.Length)];
+        AudSource.PlayOneShot(AudSource.clip);
+
+    }
+    IEnumerator WaitToPlaySpottingSound()
+    {
+        yield return new WaitForSeconds(4f);
+        AudSource.clip = SpottingPlayerSounds[Random.Range(0, SpottingPlayerSounds.Length)];
+        AudSource.PlayOneShot(AudSource.clip);
+    }
+    IEnumerator WaitToPlayLookingSound()
+    {
+        yield return new WaitForSeconds(4f);
+        AudSource.clip = LookingForPlayerSounds[Random.Range(0, LookingForPlayerSounds.Length)];
+        AudSource.PlayOneShot(AudSource.clip);
+    }
 }

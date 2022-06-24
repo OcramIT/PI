@@ -89,14 +89,24 @@ public class Door : MonoBehaviour
 
     public void TryUnlockDoor (Reach reference)
     {
-        if (id == "key1")
+        switch (id)
         {
-            if (reference.hasKey1) isUnlocked = true;
+            case "key1":
+                if (reference.hasKey1) isUnlocked = true;
+                break;
+            case "falcao":
+                if (reference.hasFalcao) isUnlocked = true;
+                break;
+            case "cruzVerm":
+                if (reference.hasCruzVerm) isUnlocked = true;
+                break;
+            case "cullen":
+                if (reference.hasCullen) isUnlocked = true;
+                break;
+            default:
+                break;
         }
-        else if (id == "key2")
-        {
-            if (reference.hasKey2) isUnlocked = true;
-        }
+        
 
     }
     #endregion

@@ -11,9 +11,11 @@ public class Reach : MonoBehaviour
     [SerializeField] private float waitSecondsToClosePanel;
 
     [Header("KEYS")]
-    [SerializeField] private KeyCode keyCodeInteraction = KeyCode.F;
+    [SerializeField] private KeyCode keyCodeInteraction = KeyCode.E;
     public bool hasKey1=false;
-    public bool hasKey2=false;
+    public bool hasFalcao=false;
+    public bool hasCruzVerm=false;
+    public bool hasCullen=false;
 
 
     [Header("Imagens")]
@@ -77,8 +79,24 @@ public class Reach : MonoBehaviour
             keyScript keyRef= hit.transform.GetComponent<keyScript>();
             if (!keyRef) return;
 
-            if (keyRef.id == "key1") hasKey1 = true;
-            if (keyRef.id == "key2") hasKey2 = true;
+            switch (keyRef.id)
+            {
+                case "key1":
+                    hasKey1 = true;
+                    break;
+                case "falcao":
+                    hasFalcao = true;
+                    break;
+                case "cruzVerm":
+                    hasCruzVerm = true;
+                    break;
+                case "cullen":
+                    hasCullen = true;
+                    break;
+                default:
+                    break;
+            }
+
             Destroy(keyRef.gameObject);
         }
 

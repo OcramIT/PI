@@ -162,16 +162,22 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   _sceneHistory:
-  - name: CutScene
-    path: Assets/Scenes/CutScene.unity
-  - name: AssetsParaSeManterem
-    path: Assets/Scenes/AssetsParaSeManterem.unity
+  - name: SplashScreen
+    path: Assets/Scenes/SplashScreen.unity
   - name: florest
     path: Assets/Scenes/florest.unity
-  - name: TestLevel
-    path: Assets/Scenes/TestLevel.unity
+  - name: AssetsParaSeManterem
+    path: Assets/Scenes/AssetsParaSeManterem.unity
   - name: HospitalInterior
     path: Assets/Scenes/HospitalInterior.unity
+  - name: MainMenu
+    path: Assets/Scenes/MainMenu.unity
+  - name: SampleScene
+    path: Assets/Scenes/SampleScene.unity
+  - name: CutScene
+    path: Assets/Scenes/CutScene.unity
+  - name: TestLevel
+    path: Assets/Scenes/TestLevel.unity
   - name: Narrativa
     path: Assets/Scenes/Narrativa.unity
   - name: MainMenu
@@ -194,9 +200,3 @@ MonoBehaviour:
     path: Assets/Plugins/Infinity Code/Ultimate Editor Enhancer/Examples/View States.unity
   - name: Decals Demo
     path: Assets/GVX URP Decal/Decals Demo.unity
-  - name: Example2_Bezier
-    path: Assets/SWS/Examples/Example2_Bezier.unity
-  - name: Example5_Events
-    path: Assets/SWS/Examples/Example5_Events.unity
-  - name: Example1_Splines
-    path: Assets/SWS/Examples/Example1_Splines.unity

@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-    
+    [SerializeField] GameObject doorToDestroy;
+    [SerializeField] GameObject doorToShow;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             SceneManager.UnloadSceneAsync("florest");
             SceneManager.LoadScene("HospitalInterior", LoadSceneMode.Additive);
+            Destroy(doorToDestroy);
+            doorToShow.SetActive(true);
             Destroy(gameObject);
         }
     }

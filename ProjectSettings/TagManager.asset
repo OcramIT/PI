@@ -9,6 +9,9 @@ TagManager:
   - LamparinaPickup
   - Note
   - BoltCutter
+  - Lamparina
+  - ToolTip
+  - JumpText
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - UI
   - Ground
   - Player
-  - 
+  - IgnoredByLight
   - 
   - 
   - 

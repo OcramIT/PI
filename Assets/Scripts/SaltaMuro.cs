@@ -7,13 +7,20 @@ using System;
 public class SaltaMuro : MonoBehaviour
 {
     [SerializeField] Transform destinationPlace;
+    [SerializeField] GameObject JumpText;
     private float myFloat;
 
     public bool isCompleted=false;
 
+
+    private void Start()
+    {
+        JumpText = GameObject.FindGameObjectWithTag("JumpText");
+        JumpText.SetActive(false);
+    }
     private void OnTriggerEnter(Collider other)
     {
-        
+        JumpText.SetActive(true);
     }
 
     private void OnTriggerStay(Collider other)
@@ -25,7 +32,6 @@ public class SaltaMuro : MonoBehaviour
             {
                 if (other.GetComponent<FirstPersonController>().shouldJump)
                 {
-                    Debug.Log("jump");
                     other.transform.DOJump(destinationPlace.position, 2f, 1, 1);
 
                     other.GetComponent<FirstPersonController>().shouldJump = false;
@@ -36,8 +42,12 @@ public class SaltaMuro : MonoBehaviour
 
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        JumpText.SetActive(false);
+    }
 
-    
+
 
     IEnumerator Delay()
     {
