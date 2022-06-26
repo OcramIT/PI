@@ -175,19 +175,29 @@ public class EnemyAI : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         AudSource.clip = AttakingPlayerSounds[Random.Range(0, AttakingPlayerSounds.Length)];
-        AudSource.PlayOneShot(AudSource.clip);
+        if (!AudSource.isPlaying)
+        {
+            AudSource.PlayOneShot(AudSource.clip);
+        }
+        
 
     }
     IEnumerator WaitToPlaySpottingSound()
     {
         yield return new WaitForSeconds(4f);
         AudSource.clip = SpottingPlayerSounds[Random.Range(0, SpottingPlayerSounds.Length)];
-        AudSource.PlayOneShot(AudSource.clip);
+        if (!AudSource.isPlaying)
+        {
+            AudSource.PlayOneShot(AudSource.clip);
+        }
     }
     IEnumerator WaitToPlayLookingSound()
     {
         yield return new WaitForSeconds(4f);
         AudSource.clip = LookingForPlayerSounds[Random.Range(0, LookingForPlayerSounds.Length)];
-        AudSource.PlayOneShot(AudSource.clip);
+        if (!AudSource.isPlaying)
+        {
+            AudSource.PlayOneShot(AudSource.clip);
+        }
     }
 }
