@@ -9,4 +9,4 @@ Este repository é o Projeto Integrado de 2º ano 2º semestre dos alunos:
   <li> Miguel Pinho nº a42112</li>
 </ul>
 
-# Work in Progress até à data de apresentação
+
